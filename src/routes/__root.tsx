@@ -88,6 +88,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Viviane Moluh Peyou — Écrivaine, poétesse, chercheuse" },
+      { name: "description", content: "A bilingual author website showcasing Viviane Moluh Peyou's literary works and research." },
+      { property: "og:description", content: "A bilingual author website showcasing Viviane Moluh Peyou's literary works and research." },
+      { name: "twitter:description", content: "A bilingual author website showcasing Viviane Moluh Peyou's literary works and research." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f99a6b0-2f0b-4ff7-8c1d-259c069c0d21/id-preview-eb9491e0--d2eef447-51e5-45ff-8744-abb170c7099d.lovable.app-1781989313166.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f99a6b0-2f0b-4ff7-8c1d-259c069c0d21/id-preview-eb9491e0--d2eef447-51e5-45ff-8744-abb170c7099d.lovable.app-1781989313166.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
