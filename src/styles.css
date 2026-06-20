@@ -125,6 +125,59 @@
     display: inline-block;
   }
 
+  /* Animated underline for nav links */
+  .nav-underline {
+    position: relative;
+  }
+  .nav-underline::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -6px;
+    height: 2px; width: 100%;
+    background: var(--color-gold);
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-underline:hover::after,
+  .nav-underline[data-status="active"]::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+
+  /* Gold shimmer on hero name */
+  .gold-shimmer {
+    background: linear-gradient(
+      100deg,
+      var(--color-primary) 0%,
+      var(--color-primary) 38%,
+      color-mix(in oklab, var(--color-gold) 90%, white 10%) 50%,
+      var(--color-primary) 62%,
+      var(--color-primary) 100%
+    );
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gold-shimmer 6s ease-in-out infinite;
+  }
+  @keyframes gold-shimmer {
+    0%   { background-position: 120% 0; }
+    50%  { background-position: -20% 0; }
+    100% { background-position: 120% 0; }
+  }
+
+  /* Premium book-cover hover lift */
+  .book-hover {
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .group:hover .book-hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 30px 60px -20px color-mix(in oklab, var(--color-primary) 45%, transparent);
+  }
+
   /* Smooth focus rings */
   :focus-visible {
     outline: 2px solid var(--color-gold);
@@ -134,4 +187,10 @@
 
   /* No horizontal scroll, ever */
   html, body { overflow-x: hidden; max-width: 100%; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gold-shimmer { animation: none; }
+    .book-hover { transition: none; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
 }
