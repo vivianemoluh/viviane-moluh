@@ -11,7 +11,7 @@ export function BookCard({ book, lang }: { book: Book; lang: string }) {
       params={{ slug: book.slug }}
       className="group flex flex-col"
     >
-      <div className="relative aspect-[2/3] overflow-hidden bg-gradient-to-br from-primary/90 to-primary/60 shadow-lg transition group-hover:shadow-2xl">
+      <div className="book-hover relative aspect-[2/3] overflow-hidden bg-gradient-to-br from-primary/90 to-primary/60 shadow-lg">
         {book.cover_url ? (
           // eslint-disable-next-line jsx-a11y/alt-text
           <img

@@ -35,13 +35,13 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((l) => (
             <Link
               key={l.to}
               to={l.to}
               activeOptions={{ exact: l.to === "/" }}
-              className="text-sm tracking-wide text-foreground/80 transition-colors hover:text-primary data-[status=active]:text-primary data-[status=active]:underline data-[status=active]:underline-offset-8 data-[status=active]:decoration-gold data-[status=active]:decoration-2"
+              className="nav-underline text-sm tracking-wide text-foreground/80 transition-colors hover:text-primary data-[status=active]:text-primary"
             >
               {t(l.key)}
             </Link>
