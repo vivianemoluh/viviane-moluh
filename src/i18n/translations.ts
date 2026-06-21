@@ -386,7 +386,7 @@ export const resources = {
         navigation: "Navigation",
         legal: "Legal",
         follow: "Follow me",
-        credit: "Site by Adrien",
+        credit: "Site by",
         rights: "All rights reserved",
       },
     },
