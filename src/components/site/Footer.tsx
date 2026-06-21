@@ -50,7 +50,17 @@ export function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-primary-foreground/70 sm:flex-row sm:px-6 lg:px-8">
           <p>© {year} Viviane Moluh Peyou. {t("footer.rights")}.</p>
-          <p>{t("footer.credit")}</p>
+          <p>
+            {t("footer.credit")}{" "}
+            <a
+              href="https://portfolio-adrien-pma.lovable.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              Adrien
+            </a>
+          </p>
         </div>
       </div>
     </footer>
