@@ -190,7 +190,7 @@ export const resources = {
         navigation: "Navigation",
         legal: "Informations légales",
         follow: "Me suivre",
-        credit: "Site créé par Adrien",
+        credit: "Site créé par",
         rights: "Tous droits réservés",
       },
     },
