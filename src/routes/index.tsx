@@ -10,22 +10,27 @@ import { BookCard } from "@/components/site/BookCard";
 import { ChronicleCard } from "@/components/site/ChronicleCard";
 import { EventRow } from "@/components/site/EventRow";
 import { Reveal } from "@/components/site/Reveal";
+import heroPortrait from "@/assets/viviane-hero.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Viviane Moluh Peyou — Écrivaine, poétesse, chercheuse" },
+      { title: "Viviane Moluh Peyou — Écrivaine et romancière camerounaise" },
       {
         name: "description",
         content:
-          "Site officiel de Viviane Moluh Peyou. Romans, poésie, théâtre. La mise en mots des maux.",
+          "Site officiel de Viviane Moluh Peyou. Romans Les choix de l'ombre et Poùre, le mouton noir des Njoya. Manuels officiels LATINITAS. La mise en mots des maux.",
       },
+      { property: "og:title", content: "Viviane Moluh Peyou — Écrivaine et romancière" },
+      { property: "og:description", content: "Romans, manuels officiels de latin, chroniques littéraires." },
+      { property: "og:image", content: heroPortrait.url },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
   component: HomePage,
 });
+
 
 function HomePage() {
   const { t, i18n } = useTranslation();
