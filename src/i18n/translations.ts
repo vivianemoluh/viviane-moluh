@@ -207,8 +207,9 @@ export const resources = {
       meta: {
         siteName: "Viviane Moluh Peyou",
         tagline: "Giving words to wounds",
-        defaultDescription: "Official website of Viviane Moluh Peyou — Cameroonian writer, poet, and researcher.",
+        defaultDescription: "Official website of Viviane Moluh Peyou — Cameroonian writer and novelist, Regional Pedagogical Inspector.",
       },
+
       nav: {
         home: "Home",
         biography: "Biography",
