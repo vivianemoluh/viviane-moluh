@@ -88,16 +88,18 @@ export const resources = {
 
       books: {
         title: "Mes livres",
-        intro: "Romans, poésie, théâtre. Une œuvre traversée par les questions de mémoire, de liberté et de transmission.",
+        intro: "Romans et manuels officiels de latin. Une œuvre entre littérature engagée et transmission pédagogique.",
         readSummary: "Lire le résumé",
         excerpt: "Extrait gratuit (PDF)",
         buyTitle: "Où se procurer le livre",
-        reviewsTitle: "Ce qu'en disent les lectrices et lecteurs",
-        noReviews: "Soyez le premier à laisser un témoignage.",
+        reviewsTitle: "Notes de lecture",
+        noReviews: "Les notes de lecture seront publiées ici.",
         otherBooks: "Autres œuvres",
         publishedIn: "Paru en",
         genre: "Genre",
+        officialBadge: "Manuel officiel — Ministère de l'Éducation",
       },
+
       chronicles: {
         title: "Chroniques & Réflexions",
         intro: "Notes d'écriture, lectures du monde, échos de l'actualité littéraire.",
