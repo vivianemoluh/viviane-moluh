@@ -48,12 +48,12 @@ export const resources = {
         required: "Champ obligatoire",
       },
       home: {
-        heroIntro: "Écrivaine • Poétesse • Chercheuse",
+        heroIntro: "Écrivaine • Romancière • Inspecteur Régional de Pédagogie",
         heroCta: "Découvrir mes livres",
         heroCtaSecondary: "Lire mes chroniques",
         introTitle: "Donner une voix aux silences",
         introBody:
-          "Originaire du Cameroun, Viviane Moluh Peyou explore par le roman, la poésie et le théâtre les territoires intimes et politiques des femmes. Une écriture engagée, lumineuse, qui transforme la blessure en parole.",
+          "Viviane Moluh Peyou est écrivaine et romancière camerounaise, originaire de Koumenke (Noun). Inspecteur Régional de Pédagogie, Secrétaire Générale du Collectif L'Encre des Mum, elle signe une écriture engagée qui transforme la blessure en parole.",
         featuredBooks: "Œuvres à découvrir",
         latestChronicles: "Dernières chroniques",
         upcomingEvents: "Prochaines rencontres",
@@ -62,6 +62,7 @@ export const resources = {
         newsletterBody:
           "Lettres rares, écrites avec soin : annonces de parutions, événements et réflexions inédites.",
       },
+
       bio: {
         title: "Biographie",
         kicker: "À propos de l'autrice",
