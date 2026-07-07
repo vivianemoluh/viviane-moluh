@@ -4,8 +4,9 @@ export const resources = {
       meta: {
         siteName: "Viviane Moluh Peyou",
         tagline: "La mise en mots des maux",
-        defaultDescription: "Site officiel de Viviane Moluh Peyou — écrivaine, poétesse et chercheuse camerounaise.",
+        defaultDescription: "Site officiel de Viviane Moluh Peyou — écrivaine et romancière camerounaise, Inspecteur Régional de Pédagogie.",
       },
+
       nav: {
         home: "Accueil",
         biography: "Biographie",
