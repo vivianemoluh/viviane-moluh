@@ -6,7 +6,7 @@ export const Route = createFileRoute("/biographie")({
   head: () => ({
     meta: [
       { title: "Biographie — Viviane Moluh Peyou" },
-      { name: "description", content: "Parcours, expertise et vision de l'écriture de Viviane Moluh Peyou." },
+      { name: "description", content: "Parcours et jalons de l'écrivaine Viviane Moluh Peyou." },
       { property: "og:title", content: "Biographie — Viviane Moluh Peyou" },
       { property: "og:url", content: "/biographie" },
     ],
@@ -23,23 +23,15 @@ function BioPage() {
       <PageHeader kicker={t("bio.kicker")} title={t("bio.title")} />
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <p className="font-quote text-2xl text-foreground/85">« {t("bio.leadFr")} »</p>
-
-        <section className="mt-12">
-          <h2 className="text-2xl">{t("bio.expertiseTitle")}</h2>
-          <p className="mt-3 text-foreground/85">{t("bio.expertiseBody")}</p>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl">{t("bio.visionTitle")}</h2>
-          <p className="mt-3 text-foreground/85">{t("bio.visionBody")}</p>
-        </section>
+        <p className="whitespace-pre-line text-lg leading-relaxed text-foreground/85">
+          {t("bio.leadFr")}
+        </p>
 
         <section className="mt-16">
           <h2 className="text-2xl">{t("bio.timelineTitle")}</h2>
           <ol className="mt-6 space-y-5 border-l-2 border-gold/40 pl-6">
-            {timeline.map((it) => (
-              <li key={it.year} className="relative">
+            {timeline.map((it, i) => (
+              <li key={`${it.year}-${i}`} className="relative">
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-gold" />
                 <p className="font-display text-xl text-primary">{it.year}</p>
                 <p className="mt-1 text-foreground/85">{it.text}</p>
