@@ -269,7 +269,7 @@ export const resources = {
         title: "Biography",
         kicker: "About the author",
         leadFr:
-          "Viviane MOLUH PEYOU is a graduate of the École Normale Supérieure of Yaoundé and currently a Regional Pedagogical Inspector.",
+          "Viviane MOLUH PEYOU is a graduate of the École Normale Supérieure of Yaoundé and currently a Regional Pedagogical Inspector. Secretary General of the L'Encre des Mum writers' collective and author of two novels — Les choix de l'ombre (Masque et Cauris, 2021) and Poùre, le mouton noir des Njoya (AfricAvenir, 2021) — she supervised the 61st and 62nd collections of Contes d'Enfants d'Afrique in the ACS-Cameroon programme (Ducere Foundation Ltd, 2024). Co-author of LATINITAS: Le latin au sous-cycle d'observation 6ᵉ/5ᵉ and LATINITAS: Le latin au sous-cycle d'orientation 4ᵉ/3ᵉ (Éclosion, 2024), listed on Cameroon's official schoolbook list, she is also Communication Secretary of the Cameroon Circle of Classics Teachers (CELCLAC) and tutor-coach for the World Bank's PADESCE programme (Support Programme for the Development of Education for Growth and Employment).",
         expertiseTitle: "Roles & responsibilities",
         expertiseBody:
           "Secretary General of the L'Encre des Mum writers' collective, Communication Secretary of the Cameroon Circle of Classics Teachers (CELCLAC), and tutor-coach for the World Bank's PADESCE programme (Support Programme for the Development of Education for Growth and Employment). Originally from Koumenke, in the Noun division.",
